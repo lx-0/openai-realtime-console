@@ -1,4 +1,4 @@
-# OpenAI Realtime Console
+# OpenAI Realtime Console.
 
 The OpenAI Realtime Console is intended as an inspector and interactive API reference
 for the OpenAI Realtime API. It comes packaged with two utility libraries,
