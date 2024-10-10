@@ -100,14 +100,35 @@
           }
         }
       }
-      & > div.kv {
+      & > div.memory {
         height: 250px;
-        max-height: 250px;
         white-space: pre;
         background-color: #ececf1;
         .content-block-body {
           padding: 16px;
           margin-top: 56px;
+        }
+      }
+      & > div.information {
+        height: 250px;
+        background-color: #ececf1;
+        .content-block-body {
+          padding: 16px;
+          margin-top: 56px;
+        }
+      }
+      & > div.displayedImage {
+        background-color: #ececf1;
+        height: 0;
+
+        .content-block-body {
+          display: flex;
+          padding: 0;
+
+          img {
+            max-width: 100%;
+            height: auto;
+          }
         }
       }
     }
@@ -138,9 +159,8 @@
         flex-shrink: 0;
         width: 100%;
         overflow: hidden;
-        height: 200px;
+        height: 600px;
         min-height: 0;
-        max-height: 200px;
         border-top: 1px solid #e7e7e7;
       }
     }
@@ -182,9 +202,11 @@
       margin-right: 16px;
       &.user {
         color: #0099ff;
+        margin-block-start: 1em;
       }
       &.assistant {
         color: #009900;
+        margin-block-start: 1em;
       }
     }
     .speaker-content {
